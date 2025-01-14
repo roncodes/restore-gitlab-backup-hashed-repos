@@ -28,7 +28,7 @@ jobs:
         pyinstaller --onefile src/script.py
 
     - name: Create GitHub Release
-      id: create-release # Added ID for reusability
+      id: create-release
       uses: actions/create-release@v1
       with:
         tag_name: ${{ github.ref_name }}
@@ -37,6 +37,8 @@ jobs:
         prerelease: false
         body: |
           Automated release for version ${{ github.ref_name }}.
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Upload Release Asset
       uses: actions/upload-release-asset@v1
@@ -45,3 +47,5 @@ jobs:
         asset_path: dist/script  # Adjusted to match default PyInstaller output binary name
         asset_name: restore-gitlab-backup-hashed-repos
         asset_content_type: application/octet-stream
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
