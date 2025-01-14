@@ -48,8 +48,8 @@ python src/script.py --backup <path-to-gitlab-backup.tar> --output <output-direc
 
 ### Arguments
 
-- `--backup` $begin:math:text$required$end:math:text$: Path to the GitLab backup tarball (e.g., `1732982737_gitlab_backup.tar`).
-- `--output` $begin:math:text$required$end:math:text$: Path to the output directory where repositories will be extracted.
+- `--backup`: Path to the GitLab backup tarball (e.g., `1732982737_gitlab_backup.tar`).
+- `--output`: Path to the output directory where repositories will be extracted.
 
 ### Example
 
@@ -74,7 +74,7 @@ After execution, the script organizes repositories into the specified output dir
 
 ### Debugging
 
-For debugging purposes, the script displays a tabulated view of the repository mappings $begin:math:text$project name, group path, and hashed path$end:math:text$ and logs progress at every step.
+For debugging purposes, the script displays a tabulated view of the repository mappings name, group path, and hashed path$end:math:text$ and logs progress at every step.
 
 ## Development
 
@@ -118,7 +118,7 @@ The project uses GitHub Actions for automated builds. To build a binary for dist
 
 ## License
 
-This project is licensed under the $begin:math:display$MIT License$end:math:display$$begin:math:text$LICENSE$end:math:text$.
+This project is licensed under the MIT License.
 
 ## Acknowledgments
 
