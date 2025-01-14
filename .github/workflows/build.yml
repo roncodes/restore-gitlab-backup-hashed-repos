@@ -12,7 +12,7 @@ jobs:
 
     services:
       postgres:
-        image: postgres:13
+        image: postgres:15
         env:
           POSTGRES_USER: runner
           POSTGRES_HOST_AUTH_METHOD: trust
@@ -45,6 +45,10 @@ jobs:
         done
 
     - name: Run Tests
+      env:
+        PGHOST: localhost
+        PGUSER: runner
+        PGDATABASE: postgres
       run: |
         pytest --maxfail=3 --disable-warnings
 

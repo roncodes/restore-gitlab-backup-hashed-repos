@@ -53,7 +53,7 @@ def test_setup_temp_database(temp_backup_file):
     os.makedirs(db_dir, exist_ok=True)
     db_file_path = os.path.join(db_dir, "database.sql.gz")
     with gzip.open(db_file_path, "wb") as f:
-        f.write(b"CREATE DATABASE test;")
+        f.write(b"CREATE DATABASE gitlab_temp_backup;")
     
     # Decompress the database and set up a temporary DB
     try:
