@@ -1,0 +1,76 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller artifacts
+*.spec
+dist/
+build/
+
+# Virtual environments
+.env/
+.venv/
+ENV/
+env.bak/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Logs and temporary files
+*.log
+*.bak
+*.swp
+*.swo
+.DS_Store
+*.tmp
+*.temp
+*.pid
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Test result files
+.cache
+.tox/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# IDE / Editor directories and files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# GitHub Actions
+.github/workflows/*.log
+
+# Operating system files
+Thumbs.db
+ehthumbs.db
+desktop.ini
