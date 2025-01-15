@@ -74,7 +74,7 @@ After execution, the script organizes repositories into the specified output dir
 
 ### Debugging
 
-For debugging purposes, the script displays a tabulated view of the repository mappings name, group path, and hashed path$end:math:text$ and logs progress at every step.
+For debugging purposes, the script displays a tabulated view of the repository mappings name, group path, and hashed path and logs progress at every step.
 
 ## Development
 
@@ -82,7 +82,7 @@ For debugging purposes, the script displays a tabulated view of the repository m
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/<your-username>/restore-gitlab-backup-hashed-repos.git
+   git clone https://github.com/roncodes/restore-gitlab-backup-hashed-repos.git
    cd restore-gitlab-backup-hashed-repos
    ```
 
